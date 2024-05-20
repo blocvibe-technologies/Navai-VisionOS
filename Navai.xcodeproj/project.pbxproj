@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F3265A12BE22838006F164F /* NSViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3265A02BE22838006F164F /* NSViewTransformer.swift */; };
+		7F4A967B2BE0D04A002CD1A9 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96612BE0D04A002CD1A9 /* IQNSArray+Sort.swift */; };
+		7F4A967C2BE0D04A002CD1A9 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96622BE0D04A002CD1A9 /* IQUIScrollView+Additions.swift */; };
+		7F4A967D2BE0D04A002CD1A9 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96632BE0D04A002CD1A9 /* IQUITextFieldView+Additions.swift */; };
+		7F4A967E2BE0D04A002CD1A9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96642BE0D04A002CD1A9 /* IQUIView+Hierarchy.swift */; };
+		7F4A967F2BE0D04A002CD1A9 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96652BE0D04A002CD1A9 /* IQUIViewController+Additions.swift */; };
+		7F4A96802BE0D04A002CD1A9 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96672BE0D04A002CD1A9 /* IQKeyboardManagerConstants.swift */; };
+		7F4A96812BE0D04A002CD1A9 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96682BE0D04A002CD1A9 /* IQKeyboardManagerConstantsInternal.swift */; };
+		7F4A96822BE0D04A002CD1A9 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A966A2BE0D04A002CD1A9 /* IQTextView.swift */; };
+		7F4A96832BE0D04A002CD1A9 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A966C2BE0D04A002CD1A9 /* IQBarButtonItem.swift */; };
+		7F4A96842BE0D04A002CD1A9 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A966D2BE0D04A002CD1A9 /* IQInvocation.swift */; };
+		7F4A96852BE0D04A002CD1A9 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A966E2BE0D04A002CD1A9 /* IQPreviousNextView.swift */; };
+		7F4A96862BE0D04A002CD1A9 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A966F2BE0D04A002CD1A9 /* IQTitleBarButtonItem.swift */; };
+		7F4A96872BE0D04A002CD1A9 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96702BE0D04A002CD1A9 /* IQToolbar.swift */; };
+		7F4A96882BE0D04A002CD1A9 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96712BE0D04A002CD1A9 /* IQUIView+IQKeyboardToolbar.swift */; };
+		7F4A96892BE0D04A002CD1A9 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F4A96732BE0D04A002CD1A9 /* IQKeyboardManager.bundle */; };
+		7F4A968A2BE0D04A002CD1A9 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96752BE0D04A002CD1A9 /* IQKeyboardManager.swift */; };
+		7F4A968B2BE0D04A002CD1A9 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96762BE0D04A002CD1A9 /* IQKeyboardReturnKeyHandler.swift */; };
+		7F4A968C2BE0D04A002CD1A9 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F4A96782BE0D04A002CD1A9 /* LICENSE.md */; };
+		7F4A968D2BE0D04A002CD1A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F4A96792BE0D04A002CD1A9 /* README.md */; };
+		7F4A968F2BE10B61002CD1A9 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A968E2BE10B61002CD1A9 /* SavedVC.swift */; };
+		7F4A96912BE1126B002CD1A9 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96902BE1126B002CD1A9 /* PersistentStorage.swift */; };
+		7F4A96942BE11296002CD1A9 /* Navai.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96922BE11296002CD1A9 /* Navai.xcdatamodeld */; };
+		7F4A96982BE114A4002CD1A9 /* AllBoard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96962BE114A4002CD1A9 /* AllBoard+CoreDataClass.swift */; };
+		7F4A96992BE114A4002CD1A9 /* AllBoard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96972BE114A4002CD1A9 /* AllBoard+CoreDataProperties.swift */; };
+		7F4A969B2BE11998002CD1A9 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A969A2BE11998002CD1A9 /* BoardModel.swift */; };
+		7F4A969F2BE11F8C002CD1A9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A969E2BE11F8C002CD1A9 /* UIView.swift */; };
+		7F4A96A12BE1214D002CD1A9 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96A02BE1214D002CD1A9 /* HomeCell.swift */; };
+		7F902B452BD7D64D003D7666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B442BD7D64D003D7666 /* AppDelegate.swift */; };
+		7F902B472BD7D64D003D7666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B462BD7D64D003D7666 /* SceneDelegate.swift */; };
+		7F902B4C2BD7D64D003D7666 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7F902B4B2BD7D64D003D7666 /* Base */; };
+		7F902B4E2BD7D64E003D7666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F902B4D2BD7D64E003D7666 /* Assets.xcassets */; };
+		7F902B512BD7D64E003D7666 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7F902B502BD7D64E003D7666 /* Base */; };
+		7F902B5C2BD7D64E003D7666 /* NavaiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B5B2BD7D64E003D7666 /* NavaiTests.swift */; };
+		7F902B662BD7D64F003D7666 /* NavaiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B652BD7D64F003D7666 /* NavaiUITests.swift */; };
+		7F902B682BD7D64F003D7666 /* NavaiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B672BD7D64F003D7666 /* NavaiUITestsLaunchTests.swift */; };
+		7F902B752BD7D930003D7666 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B742BD7D930003D7666 /* HomeVC.swift */; };
+		7F902B772BD7D95A003D7666 /* NewBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B762BD7D95A003D7666 /* NewBoardVC.swift */; };
+		7F902B7D2BD8E6F3003D7666 /* ShapesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B7C2BD8E6F3003D7666 /* ShapesVC.swift */; };
+		7F902B852BD92104003D7666 /* HBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B7E2BD92104003D7666 /* HBButton.swift */; };
+		7F902B862BD92104003D7666 /* HBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B7F2BD92104003D7666 /* HBView.swift */; };
+		7F902B872BD92104003D7666 /* HBXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B802BD92104003D7666 /* HBXib.swift */; };
+		7F902C042BDA28D9003D7666 /* HBStickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C022BDA28D9003D7666 /* HBStickerView.xib */; };
+		7F902C052BDA28D9003D7666 /* HBStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902C032BDA28D9003D7666 /* HBStickerView.swift */; };
+		7F902C082BDA2BC6003D7666 /* ShapesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902C072BDA2BC6003D7666 /* ShapesCell.swift */; };
+		7F902C342BDA5F52003D7666 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C262BDA5F51003D7666 /* 2.png */; };
+		7F902C352BDA5F52003D7666 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C272BDA5F51003D7666 /* 8.png */; };
+		7F902C362BDA5F52003D7666 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C282BDA5F51003D7666 /* 1.png */; };
+		7F902C372BDA5F52003D7666 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C292BDA5F51003D7666 /* 12.png */; };
+		7F902C382BDA5F52003D7666 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C2A2BDA5F51003D7666 /* 3.png */; };
+		7F902C392BDA5F52003D7666 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C2B2BDA5F51003D7666 /* 9.png */; };
+		7F902C3A2BDA5F52003D7666 /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C2C2BDA5F51003D7666 /* 13.png */; };
+		7F902C3B2BDA5F52003D7666 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C2D2BDA5F51003D7666 /* 11.png */; };
+		7F902C3C2BDA5F52003D7666 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C2E2BDA5F51003D7666 /* 5.png */; };
+		7F902C3D2BDA5F52003D7666 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C2F2BDA5F51003D7666 /* 10.png */; };
+		7F902C3E2BDA5F52003D7666 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C302BDA5F51003D7666 /* 4.png */; };
+		7F902C3F2BDA5F52003D7666 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C312BDA5F51003D7666 /* 6.png */; };
+		7F902C402BDA5F52003D7666 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C322BDA5F52003D7666 /* 7.png */; };
+		7F902C412BDA5F52003D7666 /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C332BDA5F52003D7666 /* 14.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F902B582BD7D64E003D7666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F902B392BD7D64C003D7666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F902B402BD7D64D003D7666;
+			remoteInfo = Navai;
+		};
+		7F902B622BD7D64E003D7666 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F902B392BD7D64C003D7666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F902B402BD7D64D003D7666;
+			remoteInfo = Navai;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F3265A02BE22838006F164F /* NSViewTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewTransformer.swift; sourceTree = "<group>"; };
+		7F4A96612BE0D04A002CD1A9 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		7F4A96622BE0D04A002CD1A9 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		7F4A96632BE0D04A002CD1A9 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		7F4A96642BE0D04A002CD1A9 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		7F4A96652BE0D04A002CD1A9 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		7F4A96672BE0D04A002CD1A9 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		7F4A96682BE0D04A002CD1A9 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		7F4A966A2BE0D04A002CD1A9 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		7F4A966C2BE0D04A002CD1A9 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		7F4A966D2BE0D04A002CD1A9 /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		7F4A966E2BE0D04A002CD1A9 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		7F4A966F2BE0D04A002CD1A9 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		7F4A96702BE0D04A002CD1A9 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		7F4A96712BE0D04A002CD1A9 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		7F4A96732BE0D04A002CD1A9 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		7F4A96752BE0D04A002CD1A9 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		7F4A96762BE0D04A002CD1A9 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		7F4A96782BE0D04A002CD1A9 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		7F4A96792BE0D04A002CD1A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7F4A968E2BE10B61002CD1A9 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
+		7F4A96902BE1126B002CD1A9 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		7F4A96932BE11296002CD1A9 /* Navai.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Navai.xcdatamodel; sourceTree = "<group>"; };
+		7F4A96962BE114A4002CD1A9 /* AllBoard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllBoard+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7F4A96972BE114A4002CD1A9 /* AllBoard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllBoard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7F4A969A2BE11998002CD1A9 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
+		7F4A969E2BE11F8C002CD1A9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		7F4A96A02BE1214D002CD1A9 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		7F902B412BD7D64D003D7666 /* Navai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F902B442BD7D64D003D7666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F902B462BD7D64D003D7666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F902B4B2BD7D64D003D7666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F902B4D2BD7D64E003D7666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F902B502BD7D64E003D7666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F902B522BD7D64E003D7666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F902B572BD7D64E003D7666 /* NavaiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavaiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F902B5B2BD7D64E003D7666 /* NavaiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavaiTests.swift; sourceTree = "<group>"; };
+		7F902B612BD7D64E003D7666 /* NavaiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavaiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F902B652BD7D64F003D7666 /* NavaiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavaiUITests.swift; sourceTree = "<group>"; };
+		7F902B672BD7D64F003D7666 /* NavaiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavaiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F902B742BD7D930003D7666 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		7F902B762BD7D95A003D7666 /* NewBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBoardVC.swift; sourceTree = "<group>"; };
+		7F902B7C2BD8E6F3003D7666 /* ShapesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesVC.swift; sourceTree = "<group>"; };
+		7F902B7E2BD92104003D7666 /* HBButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBButton.swift; sourceTree = "<group>"; };
+		7F902B7F2BD92104003D7666 /* HBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBView.swift; sourceTree = "<group>"; };
+		7F902B802BD92104003D7666 /* HBXib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBXib.swift; sourceTree = "<group>"; };
+		7F902C022BDA28D9003D7666 /* HBStickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBStickerView.xib; sourceTree = "<group>"; };
+		7F902C032BDA28D9003D7666 /* HBStickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBStickerView.swift; sourceTree = "<group>"; };
+		7F902C072BDA2BC6003D7666 /* ShapesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesCell.swift; sourceTree = "<group>"; };
+		7F902C262BDA5F51003D7666 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		7F902C272BDA5F51003D7666 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		7F902C282BDA5F51003D7666 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		7F902C292BDA5F51003D7666 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		7F902C2A2BDA5F51003D7666 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		7F902C2B2BDA5F51003D7666 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		7F902C2C2BDA5F51003D7666 /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		7F902C2D2BDA5F51003D7666 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		7F902C2E2BDA5F51003D7666 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		7F902C2F2BDA5F51003D7666 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		7F902C302BDA5F51003D7666 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		7F902C312BDA5F51003D7666 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		7F902C322BDA5F52003D7666 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		7F902C332BDA5F52003D7666 /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		7FD023FF2BEA42FA008DCBC2 /* Navai.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Navai.entitlements; sourceTree = "<group>"; };
+		7FD024012BEA4380008DCBC2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		7FD024022BEA4380008DCBC2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		7FE517302BF5D7890059DDDC /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F902B3E2BD7D64D003D7666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F902B542BD7D64E003D7666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F902B5E2BD7D64E003D7666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F4A96602BE0D04A002CD1A9 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		7F4A96662BE0D04A002CD1A9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7F4A96612BE0D04A002CD1A9 /* IQNSArray+Sort.swift */,
+				7F4A96622BE0D04A002CD1A9 /* IQUIScrollView+Additions.swift */,
+				7F4A96632BE0D04A002CD1A9 /* IQUITextFieldView+Additions.swift */,
+				7F4A96642BE0D04A002CD1A9 /* IQUIView+Hierarchy.swift */,
+				7F4A96652BE0D04A002CD1A9 /* IQUIViewController+Additions.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		7F4A96692BE0D04A002CD1A9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7F4A96672BE0D04A002CD1A9 /* IQKeyboardManagerConstants.swift */,
+				7F4A96682BE0D04A002CD1A9 /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7F4A966B2BE0D04A002CD1A9 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				7F4A966A2BE0D04A002CD1A9 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		7F4A96722BE0D04A002CD1A9 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				7F4A966C2BE0D04A002CD1A9 /* IQBarButtonItem.swift */,
+				7F4A966D2BE0D04A002CD1A9 /* IQInvocation.swift */,
+				7F4A966E2BE0D04A002CD1A9 /* IQPreviousNextView.swift */,
+				7F4A966F2BE0D04A002CD1A9 /* IQTitleBarButtonItem.swift */,
+				7F4A96702BE0D04A002CD1A9 /* IQToolbar.swift */,
+				7F4A96712BE0D04A002CD1A9 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		7F4A96742BE0D04A002CD1A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F4A96732BE0D04A002CD1A9 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F4A96772BE0D04A002CD1A9 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				7F4A96662BE0D04A002CD1A9 /* Categories */,
+				7F4A96692BE0D04A002CD1A9 /* Constants */,
+				7F4A966B2BE0D04A002CD1A9 /* IQTextView */,
+				7F4A96722BE0D04A002CD1A9 /* IQToolbar */,
+				7F4A96742BE0D04A002CD1A9 /* Resources */,
+				7F4A96752BE0D04A002CD1A9 /* IQKeyboardManager.swift */,
+				7F4A96762BE0D04A002CD1A9 /* IQKeyboardReturnKeyHandler.swift */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		7F4A967A2BE0D04A002CD1A9 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				7F4A96602BE0D04A002CD1A9 /* IQKeyboardManager */,
+				7F4A96772BE0D04A002CD1A9 /* IQKeyboardManagerSwift */,
+				7F4A96782BE0D04A002CD1A9 /* LICENSE.md */,
+				7F4A96792BE0D04A002CD1A9 /* README.md */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		7F4A96952BE11393002CD1A9 /* CDManagedObjectProperty */ = {
+			isa = PBXGroup;
+			children = (
+				7F4A96962BE114A4002CD1A9 /* AllBoard+CoreDataClass.swift */,
+				7F4A96972BE114A4002CD1A9 /* AllBoard+CoreDataProperties.swift */,
+			);
+			path = CDManagedObjectProperty;
+			sourceTree = "<group>";
+		};
+		7F902B382BD7D64C003D7666 = {
+			isa = PBXGroup;
+			children = (
+				7F902B432BD7D64D003D7666 /* Navai */,
+				7F902B5A2BD7D64E003D7666 /* NavaiTests */,
+				7F902B642BD7D64F003D7666 /* NavaiUITests */,
+				7F902B422BD7D64D003D7666 /* Products */,
+				7FD024002BEA4380008DCBC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F902B422BD7D64D003D7666 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F902B412BD7D64D003D7666 /* Navai.app */,
+				7F902B572BD7D64E003D7666 /* NavaiTests.xctest */,
+				7F902B612BD7D64E003D7666 /* NavaiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F902B432BD7D64D003D7666 /* Navai */ = {
+			isa = PBXGroup;
+			children = (
+				7FD023FF2BEA42FA008DCBC2 /* Navai.entitlements */,
+				7F4A96952BE11393002CD1A9 /* CDManagedObjectProperty */,
+				7F902B442BD7D64D003D7666 /* AppDelegate.swift */,
+				7F902B462BD7D64D003D7666 /* SceneDelegate.swift */,
+				7F902B782BD7DBF6003D7666 /* ViewControllers */,
+				7F902C062BDA2BB2003D7666 /* CollectionViewCell */,
+				7F902B4A2BD7D64D003D7666 /* Main.storyboard */,
+				7F4A967A2BE0D04A002CD1A9 /* IQKeyboardManagerSwift */,
+				7F902B812BD92104003D7666 /* Core */,
+				7F902B842BD92104003D7666 /* Sticker */,
+				7F902B4D2BD7D64E003D7666 /* Assets.xcassets */,
+				7F902C172BDA5A7E003D7666 /* shapes */,
+				7F902B4F2BD7D64E003D7666 /* LaunchScreen.storyboard */,
+				7F902B522BD7D64E003D7666 /* Info.plist */,
+				7F4A96902BE1126B002CD1A9 /* PersistentStorage.swift */,
+				7F3265A02BE22838006F164F /* NSViewTransformer.swift */,
+				7F4A96922BE11296002CD1A9 /* Navai.xcdatamodeld */,
+				7F4A969A2BE11998002CD1A9 /* BoardModel.swift */,
+				7F4A969E2BE11F8C002CD1A9 /* UIView.swift */,
+			);
+			path = Navai;
+			sourceTree = "<group>";
+		};
+		7F902B5A2BD7D64E003D7666 /* NavaiTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F902B5B2BD7D64E003D7666 /* NavaiTests.swift */,
+			);
+			path = NavaiTests;
+			sourceTree = "<group>";
+		};
+		7F902B642BD7D64F003D7666 /* NavaiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F902B652BD7D64F003D7666 /* NavaiUITests.swift */,
+				7F902B672BD7D64F003D7666 /* NavaiUITestsLaunchTests.swift */,
+			);
+			path = NavaiUITests;
+			sourceTree = "<group>";
+		};
+		7F902B782BD7DBF6003D7666 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F902B742BD7D930003D7666 /* HomeVC.swift */,
+				7F902B762BD7D95A003D7666 /* NewBoardVC.swift */,
+				7F902B7C2BD8E6F3003D7666 /* ShapesVC.swift */,
+				7F4A968E2BE10B61002CD1A9 /* SavedVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7F902B812BD92104003D7666 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7F902B7E2BD92104003D7666 /* HBButton.swift */,
+				7F902B7F2BD92104003D7666 /* HBView.swift */,
+				7F902B802BD92104003D7666 /* HBXib.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7F902B842BD92104003D7666 /* Sticker */ = {
+			isa = PBXGroup;
+			children = (
+				7F902C032BDA28D9003D7666 /* HBStickerView.swift */,
+				7F902C022BDA28D9003D7666 /* HBStickerView.xib */,
+			);
+			path = Sticker;
+			sourceTree = "<group>";
+		};
+		7F902C062BDA2BB2003D7666 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F902C072BDA2BC6003D7666 /* ShapesCell.swift */,
+				7F4A96A02BE1214D002CD1A9 /* HomeCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		7F902C172BDA5A7E003D7666 /* shapes */ = {
+			isa = PBXGroup;
+			children = (
+				7F902C282BDA5F51003D7666 /* 1.png */,
+				7F902C262BDA5F51003D7666 /* 2.png */,
+				7F902C2A2BDA5F51003D7666 /* 3.png */,
+				7F902C302BDA5F51003D7666 /* 4.png */,
+				7F902C2E2BDA5F51003D7666 /* 5.png */,
+				7F902C312BDA5F51003D7666 /* 6.png */,
+				7F902C322BDA5F52003D7666 /* 7.png */,
+				7F902C272BDA5F51003D7666 /* 8.png */,
+				7F902C2B2BDA5F51003D7666 /* 9.png */,
+				7F902C2F2BDA5F51003D7666 /* 10.png */,
+				7F902C2D2BDA5F51003D7666 /* 11.png */,
+				7F902C292BDA5F51003D7666 /* 12.png */,
+				7F902C2C2BDA5F51003D7666 /* 13.png */,
+				7F902C332BDA5F52003D7666 /* 14.png */,
+			);
+			path = shapes;
+			sourceTree = "<group>";
+		};
+		7FD024002BEA4380008DCBC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FE517302BF5D7890059DDDC /* Speech.framework */,
+				7FD024022BEA4380008DCBC2 /* Intents.framework */,
+				7FD024012BEA4380008DCBC2 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F902B402BD7D64D003D7666 /* Navai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F902B6B2BD7D64F003D7666 /* Build configuration list for PBXNativeTarget "Navai" */;
+			buildPhases = (
+				7F902B3D2BD7D64D003D7666 /* Sources */,
+				7F902B3E2BD7D64D003D7666 /* Frameworks */,
+				7F902B3F2BD7D64D003D7666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Navai;
+			productName = Navai;
+			productReference = 7F902B412BD7D64D003D7666 /* Navai.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F902B562BD7D64E003D7666 /* NavaiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F902B6E2BD7D64F003D7666 /* Build configuration list for PBXNativeTarget "NavaiTests" */;
+			buildPhases = (
+				7F902B532BD7D64E003D7666 /* Sources */,
+				7F902B542BD7D64E003D7666 /* Frameworks */,
+				7F902B552BD7D64E003D7666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F902B592BD7D64E003D7666 /* PBXTargetDependency */,
+			);
+			name = NavaiTests;
+			productName = NavaiTests;
+			productReference = 7F902B572BD7D64E003D7666 /* NavaiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F902B602BD7D64E003D7666 /* NavaiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F902B712BD7D64F003D7666 /* Build configuration list for PBXNativeTarget "NavaiUITests" */;
+			buildPhases = (
+				7F902B5D2BD7D64E003D7666 /* Sources */,
+				7F902B5E2BD7D64E003D7666 /* Frameworks */,
+				7F902B5F2BD7D64E003D7666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F902B632BD7D64E003D7666 /* PBXTargetDependency */,
+			);
+			name = NavaiUITests;
+			productName = NavaiUITests;
+			productReference = 7F902B612BD7D64E003D7666 /* NavaiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F902B392BD7D64C003D7666 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					7F902B402BD7D64D003D7666 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					7F902B562BD7D64E003D7666 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 7F902B402BD7D64D003D7666;
+					};
+					7F902B602BD7D64E003D7666 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 7F902B402BD7D64D003D7666;
+					};
+				};
+			};
+			buildConfigurationList = 7F902B3C2BD7D64C003D7666 /* Build configuration list for PBXProject "Navai" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F902B382BD7D64C003D7666;
+			productRefGroup = 7F902B422BD7D64D003D7666 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F902B402BD7D64D003D7666 /* Navai */,
+				7F902B562BD7D64E003D7666 /* NavaiTests */,
+				7F902B602BD7D64E003D7666 /* NavaiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F902B3F2BD7D64D003D7666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4A968C2BE0D04A002CD1A9 /* LICENSE.md in Resources */,
+				7F902C352BDA5F52003D7666 /* 8.png in Resources */,
+				7F902C042BDA28D9003D7666 /* HBStickerView.xib in Resources */,
+				7F4A968D2BE0D04A002CD1A9 /* README.md in Resources */,
+				7F902B4E2BD7D64E003D7666 /* Assets.xcassets in Resources */,
+				7F902C3E2BDA5F52003D7666 /* 4.png in Resources */,
+				7F902C392BDA5F52003D7666 /* 9.png in Resources */,
+				7F902C382BDA5F52003D7666 /* 3.png in Resources */,
+				7F902C3A2BDA5F52003D7666 /* 13.png in Resources */,
+				7F4A96892BE0D04A002CD1A9 /* IQKeyboardManager.bundle in Resources */,
+				7F902C402BDA5F52003D7666 /* 7.png in Resources */,
+				7F902C342BDA5F52003D7666 /* 2.png in Resources */,
+				7F902C3B2BDA5F52003D7666 /* 11.png in Resources */,
+				7F902C412BDA5F52003D7666 /* 14.png in Resources */,
+				7F902C3D2BDA5F52003D7666 /* 10.png in Resources */,
+				7F902C372BDA5F52003D7666 /* 12.png in Resources */,
+				7F902B512BD7D64E003D7666 /* Base in Resources */,
+				7F902B4C2BD7D64D003D7666 /* Base in Resources */,
+				7F902C3C2BDA5F52003D7666 /* 5.png in Resources */,
+				7F902C3F2BDA5F52003D7666 /* 6.png in Resources */,
+				7F902C362BDA5F52003D7666 /* 1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F902B552BD7D64E003D7666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F902B5F2BD7D64E003D7666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F902B3D2BD7D64D003D7666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F902B752BD7D930003D7666 /* HomeVC.swift in Sources */,
+				7F902B452BD7D64D003D7666 /* AppDelegate.swift in Sources */,
+				7F902B772BD7D95A003D7666 /* NewBoardVC.swift in Sources */,
+				7F4A96912BE1126B002CD1A9 /* PersistentStorage.swift in Sources */,
+				7F902B472BD7D64D003D7666 /* SceneDelegate.swift in Sources */,
+				7F4A968F2BE10B61002CD1A9 /* SavedVC.swift in Sources */,
+				7F4A968A2BE0D04A002CD1A9 /* IQKeyboardManager.swift in Sources */,
+				7F902C082BDA2BC6003D7666 /* ShapesCell.swift in Sources */,
+				7F902B862BD92104003D7666 /* HBView.swift in Sources */,
+				7F4A96852BE0D04A002CD1A9 /* IQPreviousNextView.swift in Sources */,
+				7F4A967F2BE0D04A002CD1A9 /* IQUIViewController+Additions.swift in Sources */,
+				7F902B852BD92104003D7666 /* HBButton.swift in Sources */,
+				7F902B7D2BD8E6F3003D7666 /* ShapesVC.swift in Sources */,
+				7F4A96862BE0D04A002CD1A9 /* IQTitleBarButtonItem.swift in Sources */,
+				7F4A96842BE0D04A002CD1A9 /* IQInvocation.swift in Sources */,
+				7F4A967B2BE0D04A002CD1A9 /* IQNSArray+Sort.swift in Sources */,
+				7F3265A12BE22838006F164F /* NSViewTransformer.swift in Sources */,
+				7F4A96882BE0D04A002CD1A9 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				7F4A96802BE0D04A002CD1A9 /* IQKeyboardManagerConstants.swift in Sources */,
+				7F4A969B2BE11998002CD1A9 /* BoardModel.swift in Sources */,
+				7F4A96812BE0D04A002CD1A9 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				7F4A968B2BE0D04A002CD1A9 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				7F4A96982BE114A4002CD1A9 /* AllBoard+CoreDataClass.swift in Sources */,
+				7F4A96992BE114A4002CD1A9 /* AllBoard+CoreDataProperties.swift in Sources */,
+				7F902C052BDA28D9003D7666 /* HBStickerView.swift in Sources */,
+				7F4A96832BE0D04A002CD1A9 /* IQBarButtonItem.swift in Sources */,
+				7F4A96942BE11296002CD1A9 /* Navai.xcdatamodeld in Sources */,
+				7F4A967C2BE0D04A002CD1A9 /* IQUIScrollView+Additions.swift in Sources */,
+				7F4A967D2BE0D04A002CD1A9 /* IQUITextFieldView+Additions.swift in Sources */,
+				7F4A967E2BE0D04A002CD1A9 /* IQUIView+Hierarchy.swift in Sources */,
+				7F4A969F2BE11F8C002CD1A9 /* UIView.swift in Sources */,
+				7F4A96A12BE1214D002CD1A9 /* HomeCell.swift in Sources */,
+				7F4A96822BE0D04A002CD1A9 /* IQTextView.swift in Sources */,
+				7F902B872BD92104003D7666 /* HBXib.swift in Sources */,
+				7F4A96872BE0D04A002CD1A9 /* IQToolbar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F902B532BD7D64E003D7666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F902B5C2BD7D64E003D7666 /* NavaiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F902B5D2BD7D64E003D7666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F902B682BD7D64F003D7666 /* NavaiUITestsLaunchTests.swift in Sources */,
+				7F902B662BD7D64F003D7666 /* NavaiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F902B592BD7D64E003D7666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F902B402BD7D64D003D7666 /* Navai */;
+			targetProxy = 7F902B582BD7D64E003D7666 /* PBXContainerItemProxy */;
+		};
+		7F902B632BD7D64E003D7666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F902B402BD7D64D003D7666 /* Navai */;
+			targetProxy = 7F902B622BD7D64E003D7666 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F902B4A2BD7D64D003D7666 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F902B4B2BD7D64D003D7666 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F902B4F2BD7D64E003D7666 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F902B502BD7D64E003D7666 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F902B692BD7D64F003D7666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F902B6A2BD7D64F003D7666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F902B6C2BD7D64F003D7666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Navai/Navai.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/alan-sdk-ios-3.13.0/examples/alan-example-integration-objectivec/BasicIntegrationObjectiveC",
+					"$(PROJECT_DIR)/alan-sdk-ios-3.13.0/examples/alan-example-integration-swift/BasicIntegrationSwift",
+					"$(PROJECT_DIR)/alan-sdk-ios-3.13.0/examples/SAP_SampleApplication/Alan",
+					"$(PROJECT_DIR)/Navai/alan-sdk-ios-3.13.0/examples/alan-example-integration-objectivec/BasicIntegrationObjectiveC",
+					"$(PROJECT_DIR)/Navai/alan-sdk-ios-3.13.0/examples/alan-example-integration-swift/BasicIntegrationSwift",
+					"$(PROJECT_DIR)/Navai/alan-sdk-ios-3.13.0/examples/SAP_SampleApplication/Alan",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Navai/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Navai;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blocvibe.Navai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F902B6D2BD7D64F003D7666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Navai/Navai.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = 582DYN4TP3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/alan-sdk-ios-3.13.0/examples/alan-example-integration-objectivec/BasicIntegrationObjectiveC",
+					"$(PROJECT_DIR)/alan-sdk-ios-3.13.0/examples/alan-example-integration-swift/BasicIntegrationSwift",
+					"$(PROJECT_DIR)/alan-sdk-ios-3.13.0/examples/SAP_SampleApplication/Alan",
+					"$(PROJECT_DIR)/Navai/alan-sdk-ios-3.13.0/examples/alan-example-integration-objectivec/BasicIntegrationObjectiveC",
+					"$(PROJECT_DIR)/Navai/alan-sdk-ios-3.13.0/examples/alan-example-integration-swift/BasicIntegrationSwift",
+					"$(PROJECT_DIR)/Navai/alan-sdk-ios-3.13.0/examples/SAP_SampleApplication/Alan",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Navai/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Navai;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blocvibe.Navai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F902B6F2BD7D64F003D7666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blocvibe.NavaiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Navai.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Navai";
+			};
+			name = Debug;
+		};
+		7F902B702BD7D64F003D7666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blocvibe.NavaiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Navai.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Navai";
+			};
+			name = Release;
+		};
+		7F902B722BD7D64F003D7666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blocvibe.NavaiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Navai;
+			};
+			name = Debug;
+		};
+		7F902B732BD7D64F003D7666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blocvibe.NavaiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Navai;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F902B3C2BD7D64C003D7666 /* Build configuration list for PBXProject "Navai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F902B692BD7D64F003D7666 /* Debug */,
+				7F902B6A2BD7D64F003D7666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F902B6B2BD7D64F003D7666 /* Build configuration list for PBXNativeTarget "Navai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F902B6C2BD7D64F003D7666 /* Debug */,
+				7F902B6D2BD7D64F003D7666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F902B6E2BD7D64F003D7666 /* Build configuration list for PBXNativeTarget "NavaiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F902B6F2BD7D64F003D7666 /* Debug */,
+				7F902B702BD7D64F003D7666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F902B712BD7D64F003D7666 /* Build configuration list for PBXNativeTarget "NavaiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F902B722BD7D64F003D7666 /* Debug */,
+				7F902B732BD7D64F003D7666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F4A96922BE11296002CD1A9 /* Navai.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F4A96932BE11296002CD1A9 /* Navai.xcdatamodel */,
+			);
+			currentVersion = 7F4A96932BE11296002CD1A9 /* Navai.xcdatamodel */;
+			name = Navai.xcdatamodeld;
+			path = /Users/parbhat/Desktop/Navai/Navai/Navai.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F902B392BD7D64C003D7666 /* Project object */;
+}
