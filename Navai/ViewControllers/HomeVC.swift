@@ -192,8 +192,6 @@ extension HomeVC {
                     return
                 }
                 
-                NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: str)
-                
                 if self.isBool == false {
                     if (str.lowercased() == "new") {
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
