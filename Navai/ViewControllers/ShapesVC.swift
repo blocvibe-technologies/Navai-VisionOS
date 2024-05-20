@@ -73,7 +73,7 @@ class ShapesVC: UIViewController, SFSpeechRecognizerDelegate {
     
     
     @IBAction func goBack(_ sender: UIButton) {
-        self.dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func microphoneTapped(_ sender: AnyObject) {
@@ -218,46 +218,46 @@ extension ShapesVC {
         switch data.lowercased() {
         case "arrow":
             delegate?.sendSelectedShape(name: items[0])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "line":
             delegate?.sendSelectedShape(name: items[1])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "circle":
             delegate?.sendSelectedShape(name: items[2])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "triangle":
             delegate?.sendSelectedShape(name: items[3])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "angle":
             delegate?.sendSelectedShape(name: items[4])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "right":
             delegate?.sendSelectedShape(name: items[5])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "both":
             delegate?.sendSelectedShape(name: items[6])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "diamond":
             delegate?.sendSelectedShape(name: items[7])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "round":
             delegate?.sendSelectedShape(name: items[8])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "box":
             delegate?.sendSelectedShape(name: items[9])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "pentagon":
             delegate?.sendSelectedShape(name: items[10])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "star":
             delegate?.sendSelectedShape(name: items[11])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "square":
             delegate?.sendSelectedShape(name: items[12])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         case "roundsquare":
             delegate?.sendSelectedShape(name: items[13])
-            dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
         default:
             break
         }
@@ -267,7 +267,7 @@ extension ShapesVC {
 
 extension ShapesVC : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.size.width  / 2 - 20, height: 210)
+        return CGSize(width: 210, height: 210)
     }
 }
 
@@ -287,7 +287,7 @@ extension ShapesVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.sendSelectedShape(name: items[indexPath.row])
-        dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

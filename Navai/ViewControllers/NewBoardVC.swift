@@ -191,7 +191,7 @@ class NewBoardVC: UIViewController, UIScrollViewDelegate, SFSpeechRecognizerDele
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "ShapesVC") as! ShapesVC
         vc.delegate = self
-        self.present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func textAction(_ sender: UIButton) {
