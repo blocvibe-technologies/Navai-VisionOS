@@ -17,7 +17,6 @@
 		7F4A96A12BE1214D002CD1A9 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96A02BE1214D002CD1A9 /* HomeCell.swift */; };
 		7F5790C12BFC9299008CD27C /* VoiceCommandsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5790C02BFC9298008CD27C /* VoiceCommandsVC.swift */; };
 		7F5790C32BFC9455008CD27C /* VoiceCommandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5790C22BFC9455008CD27C /* VoiceCommandCell.swift */; };
-		7F5D6F2B2BFB65FF001C63ED /* Navai.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F5D6F292BFB65FF001C63ED /* Navai.xcdatamodeld */; };
 		7F902B452BD7D64D003D7666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B442BD7D64D003D7666 /* AppDelegate.swift */; };
 		7F902B472BD7D64D003D7666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B462BD7D64D003D7666 /* SceneDelegate.swift */; };
 		7F902B4C2BD7D64D003D7666 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7F902B4B2BD7D64D003D7666 /* Base */; };
@@ -49,6 +48,7 @@
 		7F902C3F2BDA5F52003D7666 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C312BDA5F51003D7666 /* 6.png */; };
 		7F902C402BDA5F52003D7666 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C322BDA5F52003D7666 /* 7.png */; };
 		7F902C412BDA5F52003D7666 /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F902C332BDA5F52003D7666 /* 14.png */; };
+		7FC212532BFCEA4F00A8CE38 /* Navai.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FC212512BFCEA4F00A8CE38 /* Navai.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,6 @@
 		7F4A96A02BE1214D002CD1A9 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		7F5790C02BFC9298008CD27C /* VoiceCommandsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCommandsVC.swift; sourceTree = "<group>"; };
 		7F5790C22BFC9455008CD27C /* VoiceCommandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCommandCell.swift; sourceTree = "<group>"; };
-		7F5D6F2A2BFB65FF001C63ED /* Navai.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Navai.xcdatamodel; sourceTree = "<group>"; };
 		7F902B412BD7D64D003D7666 /* Navai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F902B442BD7D64D003D7666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F902B462BD7D64D003D7666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +114,7 @@
 		7F902C312BDA5F51003D7666 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 		7F902C322BDA5F52003D7666 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
 		7F902C332BDA5F52003D7666 /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		7FC212522BFCEA4F00A8CE38 /* Navai.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Navai.xcdatamodel; sourceTree = "<group>"; };
 		7FD023FF2BEA42FA008DCBC2 /* Navai.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Navai.entitlements; sourceTree = "<group>"; };
 		7FD024012BEA4380008DCBC2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		7FD024022BEA4380008DCBC2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
@@ -199,7 +199,7 @@
 				7F902C172BDA5A7E003D7666 /* shapes */,
 				7F902B4F2BD7D64E003D7666 /* LaunchScreen.storyboard */,
 				7F902B522BD7D64E003D7666 /* Info.plist */,
-				7F5D6F292BFB65FF001C63ED /* Navai.xcdatamodeld */,
+				7FC212512BFCEA4F00A8CE38 /* Navai.xcdatamodeld */,
 				7F4A96952BE11393002CD1A9 /* CDManagedObjectProperty */,
 				7F4A96902BE1126B002CD1A9 /* PersistentStorage.swift */,
 				7F3265A02BE22838006F164F /* NSViewTransformer.swift */,
@@ -455,8 +455,8 @@
 				7F902B852BD92104003D7666 /* HBButton.swift in Sources */,
 				7F5790C12BFC9299008CD27C /* VoiceCommandsVC.swift in Sources */,
 				7F902B7D2BD8E6F3003D7666 /* ShapesVC.swift in Sources */,
+				7FC212532BFCEA4F00A8CE38 /* Navai.xcdatamodeld in Sources */,
 				7F3265A12BE22838006F164F /* NSViewTransformer.swift in Sources */,
-				7F5D6F2B2BFB65FF001C63ED /* Navai.xcdatamodeld in Sources */,
 				7F4A969B2BE11998002CD1A9 /* BoardModel.swift in Sources */,
 				7F5790C32BFC9455008CD27C /* VoiceCommandCell.swift in Sources */,
 				7F4A96982BE114A4002CD1A9 /* AllBoard+CoreDataClass.swift in Sources */,
@@ -849,12 +849,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7F5D6F292BFB65FF001C63ED /* Navai.xcdatamodeld */ = {
+		7FC212512BFCEA4F00A8CE38 /* Navai.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7F5D6F2A2BFB65FF001C63ED /* Navai.xcdatamodel */,
+				7FC212522BFCEA4F00A8CE38 /* Navai.xcdatamodel */,
 			);
-			currentVersion = 7F5D6F2A2BFB65FF001C63ED /* Navai.xcdatamodel */;
+			currentVersion = 7FC212522BFCEA4F00A8CE38 /* Navai.xcdatamodel */;
 			name = Navai.xcdatamodeld;
 			path = "/Users/parbhat/Desktop/Projects/iOS/Navai-VisionOS/Navai/Navai.xcdatamodeld";
 			sourceTree = "<group>";

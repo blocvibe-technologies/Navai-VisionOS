@@ -122,9 +122,9 @@ class HomeVC: UIViewController, SFSpeechRecognizerDelegate {
             // microphoneButton.setTitle("Stop Recording", for: .normal)
             self.micToggle = false
             
-            let alert = UIAlertController(title: "Voice Commend", message: "Say open settings!", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+//            let alert = UIAlertController(title: "Voice Commend", message: "Say open settings!", preferredStyle: UIAlertController.Style.alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+//            self.present(alert, animated: true, completion: nil)
             
         } else {
             DispatchQueue.main.async {
