@@ -45,6 +45,10 @@ class NewBoardVC: UIViewController, UIScrollViewDelegate, SFSpeechRecognizerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         stopAndStartScrollingImg.image = UIImage(systemName: "stop.circle")
         //        canvasView.delegate = self
         //        canvasView.drawing = drawing
@@ -53,7 +57,6 @@ class NewBoardVC: UIViewController, UIScrollViewDelegate, SFSpeechRecognizerDele
         //        canvasView.alwaysBounceVertical = true
         //        canvasView.alwaysBounceHorizontal = true
         scrollViewSetup()
-        
         setupVoiceCommend()
     }
     

@@ -36,7 +36,10 @@ class ShapesVC: UIViewController, SFSpeechRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupVoiceCommend()
     }
     
@@ -87,9 +90,9 @@ class ShapesVC: UIViewController, SFSpeechRecognizerDelegate {
             // microphoneButton.setTitle("Stop Recording", for: .normal)
             self.micToggle = false
             
-            let alert = UIAlertController(title: "Voice Commend", message: "Say add arrow!", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+//            let alert = UIAlertController(title: "Voice Commend", message: "Say add arrow!", preferredStyle: UIAlertController.Style.alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+//            self.present(alert, animated: true, completion: nil)
             
             
         } else {

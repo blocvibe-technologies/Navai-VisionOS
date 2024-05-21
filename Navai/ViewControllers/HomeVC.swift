@@ -32,6 +32,12 @@ class HomeVC: UIViewController, SFSpeechRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.micToggle = true
+        self.isBool = false
         setupVoiceCommend()
     }
     
@@ -74,13 +80,8 @@ class HomeVC: UIViewController, SFSpeechRecognizerDelegate {
         }
         recognitionRequest?.endAudio()
         microphoneButton.isEnabled = false
-        micImg.tintColor = .white
+        micImg.tintColor = .black
         self.micToggle = true
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.isBool = false
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -112,6 +113,7 @@ class HomeVC: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     @IBAction func microphoneTapped(_ sender: AnyObject) {
+        
         if self.micToggle == true {
             DispatchQueue.main.async {
                 self.startRecording()
@@ -130,7 +132,7 @@ class HomeVC: UIViewController, SFSpeechRecognizerDelegate {
             }
             self.recognitionRequest?.endAudio()
             self.microphoneButton.isEnabled = false
-            self.micImg.tintColor = .white
+            self.micImg.tintColor = .black
             // microphoneButton.setTitle("Start Recording", for: .normal)
             self.micToggle = true
         }
