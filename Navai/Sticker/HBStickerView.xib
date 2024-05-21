@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,14 +30,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Qq-2Q-x3U">
-                    <rect key="frame" x="24" y="44" width="320" height="263"/>
+                    <rect key="frame" x="24" y="48" width="320" height="239"/>
                 </imageView>
                 <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJH-H4-I4H" customClass="HBView" customModule="Navai" customModuleProvider="target">
-                    <rect key="frame" x="24" y="44" width="320" height="263"/>
+                    <rect key="frame" x="24" y="48" width="320" height="239"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="40" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dh1-Wn-2eq">
-                            <rect key="frame" x="2" y="2" width="316" height="259"/>
-                            <color key="textColor" systemColor="labelColor"/>
+                            <rect key="frame" x="2" y="2" width="316" height="235"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -63,7 +62,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-ha-1z6">
-                    <rect key="frame" x="328" y="20" width="40" height="40"/>
+                    <rect key="frame" x="328" y="24" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="H0d-vl-QfS"/>
                         <constraint firstAttribute="width" constant="40" id="dZo-fq-YSF"/>
@@ -75,7 +74,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kn-5W-USE">
-                    <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                    <rect key="frame" x="0.0" y="24" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="1sj-OX-E27"/>
                         <constraint firstAttribute="height" constant="40" id="83y-Ye-BHr"/>
@@ -87,7 +86,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8l-3T-Uyd">
-                    <rect key="frame" x="328" y="291" width="40" height="40"/>
+                    <rect key="frame" x="328" y="271" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="IMa-BZ-AZE"/>
                         <constraint firstAttribute="width" constant="40" id="Ky2-AY-S6F"/>
@@ -99,7 +98,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbj-IN-13b" customClass="HBButton" customModule="Navai" customModuleProvider="target">
-                    <rect key="frame" x="344" y="136" width="30" height="79"/>
+                    <rect key="frame" x="344" y="131.5" width="30" height="72"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <state key="normal" title="☐">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,7 +108,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adg-Hf-Sk1" customClass="HBButton" customModule="Navai" customModuleProvider="target">
-                    <rect key="frame" x="-6" y="136" width="30" height="79"/>
+                    <rect key="frame" x="-6" y="131.5" width="30" height="72"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <inset key="titleEdgeInsets" minX="16" minY="16" maxX="0.0" maxY="16"/>
                     <state key="normal" title="☐">
@@ -120,7 +119,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ln1-es-HwC" customClass="HBButton" customModule="Navai" customModuleProvider="target">
-                    <rect key="frame" x="136" y="19" width="96" height="27"/>
+                    <rect key="frame" x="136" y="23" width="96" height="27"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <state key="normal" title="☐">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -130,7 +129,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTo-KU-hDJ" customClass="HBButton" customModule="Navai" customModuleProvider="target">
-                    <rect key="frame" x="136" y="305" width="96" height="27"/>
+                    <rect key="frame" x="136" y="285" width="96" height="27"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <state key="normal" title="☐">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -192,8 +191,5 @@
         <image name="cross" width="24" height="24"/>
         <image name="expand" width="24" height="24"/>
         <image name="reload" width="24" height="24"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

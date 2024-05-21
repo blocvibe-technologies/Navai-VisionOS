@@ -43,6 +43,9 @@ class NewBoardVC: UIViewController, UIScrollViewDelegate, SFSpeechRecognizerDele
     
     var micToggle = true
     
+    var isBoolForShapes = true
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -58,6 +61,7 @@ class NewBoardVC: UIViewController, UIScrollViewDelegate, SFSpeechRecognizerDele
         //        canvasView.alwaysBounceHorizontal = true
         scrollViewSetup()
         setupVoiceCommend()
+        isBoolForShapes = true
     }
     
     
@@ -368,11 +372,15 @@ extension NewBoardVC {
     private func autoNext(data: String) {
         switch data.lowercased() {
         case "sticky":
+            print(data)
             addStickyNote()
         case "text":
             addText()
-        case "shape":
-            addShape()
+        case "shapes":
+            if isBoolForShapes {
+                isBoolForShapes = false
+                addShape()
+            }
         case "save":
             done()
         case "stop":

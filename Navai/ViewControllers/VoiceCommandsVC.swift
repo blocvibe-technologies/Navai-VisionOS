@@ -19,7 +19,7 @@ class VoiceCommandsVC: UIViewController {
         "Stop Scrolling",
         "Start Scrolling",
         "Add Sticky",
-        "Add shape",
+        "Open shapes",
         "Add text",
         "Save note",
         "Add arrow Shape",
