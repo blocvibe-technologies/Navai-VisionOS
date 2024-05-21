@@ -15,6 +15,8 @@
 		7F4A969B2BE11998002CD1A9 /* BoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A969A2BE11998002CD1A9 /* BoardModel.swift */; };
 		7F4A969F2BE11F8C002CD1A9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A969E2BE11F8C002CD1A9 /* UIView.swift */; };
 		7F4A96A12BE1214D002CD1A9 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A96A02BE1214D002CD1A9 /* HomeCell.swift */; };
+		7F5790C12BFC9299008CD27C /* VoiceCommandsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5790C02BFC9298008CD27C /* VoiceCommandsVC.swift */; };
+		7F5790C32BFC9455008CD27C /* VoiceCommandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5790C22BFC9455008CD27C /* VoiceCommandCell.swift */; };
 		7F5D6F2B2BFB65FF001C63ED /* Navai.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F5D6F292BFB65FF001C63ED /* Navai.xcdatamodeld */; };
 		7F902B452BD7D64D003D7666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B442BD7D64D003D7666 /* AppDelegate.swift */; };
 		7F902B472BD7D64D003D7666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F902B462BD7D64D003D7666 /* SceneDelegate.swift */; };
@@ -75,6 +77,8 @@
 		7F4A969A2BE11998002CD1A9 /* BoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModel.swift; sourceTree = "<group>"; };
 		7F4A969E2BE11F8C002CD1A9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7F4A96A02BE1214D002CD1A9 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		7F5790C02BFC9298008CD27C /* VoiceCommandsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCommandsVC.swift; sourceTree = "<group>"; };
+		7F5790C22BFC9455008CD27C /* VoiceCommandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCommandCell.swift; sourceTree = "<group>"; };
 		7F5D6F2A2BFB65FF001C63ED /* Navai.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Navai.xcdatamodel; sourceTree = "<group>"; };
 		7F902B412BD7D64D003D7666 /* Navai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F902B442BD7D64D003D7666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				7F902B762BD7D95A003D7666 /* NewBoardVC.swift */,
 				7F902B7C2BD8E6F3003D7666 /* ShapesVC.swift */,
 				7F4A968E2BE10B61002CD1A9 /* SavedVC.swift */,
+				7F5790C02BFC9298008CD27C /* VoiceCommandsVC.swift */,
+				7F5790C22BFC9455008CD27C /* VoiceCommandCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -447,10 +453,12 @@
 				7F902C082BDA2BC6003D7666 /* ShapesCell.swift in Sources */,
 				7F902B862BD92104003D7666 /* HBView.swift in Sources */,
 				7F902B852BD92104003D7666 /* HBButton.swift in Sources */,
+				7F5790C12BFC9299008CD27C /* VoiceCommandsVC.swift in Sources */,
 				7F902B7D2BD8E6F3003D7666 /* ShapesVC.swift in Sources */,
 				7F3265A12BE22838006F164F /* NSViewTransformer.swift in Sources */,
 				7F5D6F2B2BFB65FF001C63ED /* Navai.xcdatamodeld in Sources */,
 				7F4A969B2BE11998002CD1A9 /* BoardModel.swift in Sources */,
+				7F5790C32BFC9455008CD27C /* VoiceCommandCell.swift in Sources */,
 				7F4A96982BE114A4002CD1A9 /* AllBoard+CoreDataClass.swift in Sources */,
 				7F4A96992BE114A4002CD1A9 /* AllBoard+CoreDataProperties.swift in Sources */,
 				7F902C052BDA28D9003D7666 /* HBStickerView.swift in Sources */,

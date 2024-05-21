@@ -22,10 +22,6 @@ class SavedVC: UIViewController {
         setup()
     }
     
-//    deinit {
-//        let canvasView = view.viewWithTag(10008) as! PKCanvasView
-//        toolPicker.removeObserver(canvasView)
-//    }
     
     @IBAction func goBack(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)

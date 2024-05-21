@@ -32,6 +32,7 @@ class ShapesVC: UIViewController, SFSpeechRecognizerDelegate {
     
     var micToggle = true
     
+    var isBool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -139,6 +140,7 @@ extension ShapesVC {
         }
         
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        
         //
         //        guard   else {
         //            fatalError("Audio engine has no input node")
@@ -167,13 +169,13 @@ extension ShapesVC {
                     return
                 }
                 
-                self.autoNext(data: str)
                 
-                //                if self.isBool == false {
-                //                    if (str.lowercased() == "new") {
-                //
-                //                    }
-                //                }
+                
+                if self.isBool == false {
+                    
+                    self.autoNext(data: str)
+                    
+                }
                 
             }
             
@@ -218,45 +220,59 @@ extension ShapesVC {
         switch data.lowercased() {
         case "arrow":
             delegate?.sendSelectedShape(name: items[0])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "line":
             delegate?.sendSelectedShape(name: items[1])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "circle":
             delegate?.sendSelectedShape(name: items[2])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "triangle":
             delegate?.sendSelectedShape(name: items[3])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "angle":
             delegate?.sendSelectedShape(name: items[4])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "right":
             delegate?.sendSelectedShape(name: items[5])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "both":
             delegate?.sendSelectedShape(name: items[6])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "diamond":
             delegate?.sendSelectedShape(name: items[7])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "round":
             delegate?.sendSelectedShape(name: items[8])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "box":
             delegate?.sendSelectedShape(name: items[9])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "pentagon":
             delegate?.sendSelectedShape(name: items[10])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "star":
             delegate?.sendSelectedShape(name: items[11])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "square":
             delegate?.sendSelectedShape(name: items[12])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         case "roundsquare":
             delegate?.sendSelectedShape(name: items[13])
+            self.isBool = true
             self.navigationController?.popViewController(animated: true)
         default:
             break
