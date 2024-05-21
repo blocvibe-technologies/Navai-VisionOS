@@ -45,7 +45,7 @@ class VoiceCommandsVC: UIViewController {
     }
     
     @IBAction func goBackAction(_ sender: UIButton) {
-        self.dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
 
 }

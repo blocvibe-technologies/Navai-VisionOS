@@ -108,12 +108,10 @@ class HomeVC: UIViewController, SFSpeechRecognizerDelegate {
     @IBAction func settingsAction(_ sender: UIButton) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "VoiceCommandsVC") as! VoiceCommandsVC
-        self.present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func microphoneTapped(_ sender: AnyObject) {
-        
-        
         if self.micToggle == true {
             DispatchQueue.main.async {
                 self.startRecording()
@@ -121,6 +119,11 @@ class HomeVC: UIViewController, SFSpeechRecognizerDelegate {
             self.micImg.tintColor = .red
             // microphoneButton.setTitle("Stop Recording", for: .normal)
             self.micToggle = false
+            
+            let alert = UIAlertController(title: "Voice Commend", message: "Say open settings!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
         } else {
             DispatchQueue.main.async {
                 self.audioEngine.stop()
@@ -199,12 +202,8 @@ extension HomeVC {
                 }
                 
                 if self.isBool == false {
-                    if (str.lowercased() == "new") {
-                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                        let vc = storyboard.instantiateViewController(withIdentifier: "NewBoardVC") as! NewBoardVC
-                        self.isBool = true
-                        self.navigationController?.pushViewController(vc, animated: true)
-                    }
+                    
+                    self.autoMoveNext(data: str.lowercased())
                 }
                 
                 
@@ -245,6 +244,40 @@ extension HomeVC {
             microphoneButton.isEnabled = false
         }
     }
+    
+    
+    func autoMoveNext(data: String) {
+        
+        print(data)
+        
+        switch data {
+        case "new":
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "NewBoardVC") as! NewBoardVC
+            self.isBool = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        case "board":
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "NewBoardVC") as! NewBoardVC
+            self.isBool = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        case "setting":
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "VoiceCommandsVC") as! VoiceCommandsVC
+            self.isBool = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        case "settings":
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "VoiceCommandsVC") as! VoiceCommandsVC
+            self.isBool = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        default:
+            break
+        }
+    }
+    
+    
 }
 
 extension HomeVC : UICollectionViewDelegateFlowLayout {
